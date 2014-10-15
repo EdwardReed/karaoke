@@ -2,6 +2,7 @@
 source "https://rubygems.org"
 
 gem "sinatra"
+gem "dotenv"
 gem 'coffee-script'
 
 gem "rapgenius", "~> 1.0.2"

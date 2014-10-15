@@ -2,7 +2,7 @@ require "soundcloud"
 
 class SoundCloudEmbed
 
-  @client = SoundCloud.new(:client_id => "574890a343cf134640276eaca91ddd47")
+  @client = SoundCloud.new(client_id: ENV['SOUND_CLOUD_CLIENT'] ) 
 
   def self.embed(url)
     new_uri = @client.get('/resolve', url: url).uri
