@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Rapper</title>
+  <meta name="description" content="Paypal Example">
+  <meta name="author" content="Edward II">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <style>
+  body { 
+    color: white;
+    background-color: black;
+    overflow: hidden;
+  }
+  #search {
+    z-index: 10;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  input {
+    padding: none;
+  }
+  input[type="text"] {
+    height: 6rem;
+    width: 70%;
+    border: none;
+    font-size: 5rem;
+    background-color: black;
+    color: white;
+    border-bottom: 2px solid white;
+    padding-right: 40px;
+  }
+  input[type="submit"] {
+    border: .2rem solid;
+    border-radius: 5rem;
+    width: 10rem;
+    height: 6rem;
+    font-size: 2rem;
+    color: white;
+    background: #000000;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  *:focus { outline: 0; }
+  iframe {
+    position: fixed; right: 0; bottom: 0;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: -100;
+  }
+  .no-lyrics {
+    position: absolute;
+    bottom: 0px;
+    font-size: 4.3rem;
+  }
+  @media only screen and (max-width: 480px) {
+    .no-lyrics {
+      font-size: 2rem;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .no-lyrics {
+      font-size: 2rem;
+    }
+  }
+  </style>
+</head>
+  <body>
+    <%= yield %>
+  </body>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.scrollmagic.min.js"></script>
+  <script>
+
+  </script>
+</html>
