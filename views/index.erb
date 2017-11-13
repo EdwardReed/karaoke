@@ -1,5 +1,5 @@
-  <form id="search" action="/" method="post" >
-    <input type="text" name="song" value="<%= @song ? @song.title : "think that im kobe" %>"/>
+  <form id="search" action="/play" method="post" >
+    <input type="text" name="song" value="think that im kobe"/>
     <input value="Search" type="submit"/>
   </form>
   <% if @song %>

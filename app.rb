@@ -16,7 +16,9 @@ get "/" do
 end
 
 
-post "/" do
-  @song = RapGenius.search_by_lyrics(params[:song]).first
-  erb :"index"
+post "/play" do
+  puts params
+  @song = params["song"]
+  puts RapGenius.search_by_lyrics(@song).first
+  @song = RapGenius.search_by_lyrics().first
 end
